@@ -1,0 +1,19 @@
+url: https://mangocurly.github.io
+baseurl: /blablakorea-cours
+form_endpoint: ""
+collections:
+  articles_fr:
+    output: true
+    permalink: /notre-blog/:name
+  articles_en:
+    output: true
+    permalink: /en/notre-blog/:name
+  articles_ko:
+    output: false
+defaults:
+  - scope:
+      path: ""
+      type: articles_fr
+    values:
+      lang: fr
+      layout: article
