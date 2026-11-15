@@ -1,0 +1,15 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in site.pages -%}
+  {%- if p.lang and p.layout == "default" and p.sitemap != false %}
+  <url><loc>{{ p.url | absolute_url | xml_escape }}</loc></url>
+  {%- endif -%}
+{%- endfor -%}
+{%- for a in site.articles_fr %}
+  <url><loc>{{ a.url | absolute_url | xml_escape }}</loc><lastmod>{{ a.date | date_to_xmlschema }}</lastmod></url>
+{%- endfor %}
+</urlset>

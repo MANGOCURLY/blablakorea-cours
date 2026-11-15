@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article class="article">
+  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+  <h1>{{ page.title | escape }}</h1>
+  {% if page.image %}<img class="hero" src="{{ page.image | relative_url }}" alt="">{% endif %}
+  {{ content }}
+</article>

@@ -1,0 +1,12 @@
+{%- assign f = site.data.site[include.lang].form -%}
+{%- if site.form_endpoint and site.form_endpoint != "" -%}
+<form class="contact-form" action="{{ site.form_endpoint | escape }}" method="post" accept-charset="UTF-8">
+  <label>{{ f.name | escape }}<input name="name" autocomplete="name" required maxlength="150"></label>
+  <label>{{ f.email | escape }}<input name="email" type="email" autocomplete="email" required maxlength="254"></label>
+  <label>{{ f.message | escape }}<textarea name="message" required maxlength="6000" rows="6"></textarea></label>
+  <div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
+  <button class="btn btn-primary" type="submit">{{ f.send | escape }}</button>
+</form>
+{%- else -%}
+<p class="mail-link"><a href="mailto:{{ f.email_address }}">{{ f.email_address }}</a></p>
+{%- endif -%}

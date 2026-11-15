@@ -1,15 +1,12 @@
+# 임시 주소 기준. blablakorea.fr 연결 시 url을 https://www.blablakorea.fr 로, baseurl을 "" 로 바꾸고 CNAME 파일을 추가한다.
 url: https://mangocurly.github.io
 baseurl: /blablakorea-cours
+title: Blabla Korea
 form_endpoint: ""
 collections:
   articles_fr:
     output: true
-    permalink: /notre-blog/:name
-  articles_en:
-    output: true
-    permalink: /en/notre-blog/:name
-  articles_ko:
-    output: false
+    permalink: /notre-blog/:name/
 defaults:
   - scope:
       path: ""
@@ -17,3 +14,5 @@ defaults:
     values:
       lang: fr
       layout: article
+exclude:
+  - README.md

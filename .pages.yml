@@ -1,0 +1,76 @@
+media:
+  input: assets/images
+  output: /assets/images
+content:
+  - name: site
+    label: "공통 · 메뉴와 꼬리말"
+    type: file
+    path: _data/site.yml
+    fields:
+      - name: fr
+        label: "불어"
+        type: object
+        fields:
+          - name: nav
+            label: "메뉴"
+            type: object
+            list: true
+            fields:
+              - { name: label, label: "메뉴 이름", type: string }
+              - { name: url, label: "주소", type: string }
+          - { name: contact_label, label: "문의 버튼 글자", type: string }
+          - name: footer
+            label: "꼬리말 링크"
+            type: object
+            list: true
+            fields:
+              - { name: label, label: "이름", type: string }
+              - { name: url, label: "주소", type: string }
+          - { name: blog_title, label: "블로그 제목", type: string }
+      - name: en
+        label: "영어"
+        type: object
+        fields:
+          - name: nav
+            label: "메뉴"
+            type: object
+            list: true
+            fields:
+              - { name: label, label: "메뉴 이름", type: string }
+              - { name: url, label: "주소", type: string }
+          - { name: contact_label, label: "문의 버튼 글자", type: string }
+          - name: footer
+            label: "꼬리말 링크"
+            type: object
+            list: true
+            fields:
+              - { name: label, label: "이름", type: string }
+              - { name: url, label: "주소", type: string }
+          - { name: blog_title, label: "블로그 제목", type: string }
+  - name: pages_fr
+    label: "불어 · 페이지"
+    type: collection
+    path: pages/fr
+    fields:
+      - { name: title, label: "검색·탭 제목", type: string }
+      - { name: description, label: "검색 설명", type: text }
+      - { name: body, label: "본문 (HTML — 글자만 고치고 꺾쇠 < > 안은 건드리지 마세요)", type: text }
+  - name: pages_en
+    label: "영어 · 페이지"
+    type: collection
+    path: pages/en
+    fields:
+      - { name: title, label: "검색·탭 제목", type: string }
+      - { name: description, label: "검색 설명", type: text }
+      - { name: body, label: "본문 (HTML — 글자만 고치고 꺾쇠 < > 안은 건드리지 마세요)", type: text }
+  - name: articles_fr
+    label: "불어 · 블로그 글"
+    type: collection
+    path: _articles_fr
+    filename: "{primary}.md"
+    fields:
+      - { name: title, label: "글 제목", type: string, required: true }
+      - { name: date, label: "게시일", type: date, required: true }
+      - { name: image, label: "대표 사진", type: image }
+      - { name: description, label: "검색 설명", type: text }
+      - { name: body, label: "본문", type: rich-text }

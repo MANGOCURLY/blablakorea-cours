@@ -1,0 +1,371 @@
+---
+layout: default
+lang: fr
+key: politique-de-remboursement
+title: "Politique d'annulation & de remboursement"
+description: "Cette politique s'applique à l'ensemble des cours de coréen Blabla Korea : cours particuliers, cours collectifs et ateliers thématiques."
+permalink: /politique-de-remboursement/
+---
+<style>
+.bbk-policy {
+    --plum: #3d0022;
+    --plum-soft: #5c2141;
+    --rose: #a1537c;
+    --rose-soft: #f3e6ed;
+    --page: #fdfcfd;
+    --card: #ffffff;
+    --line: #e9e0e5;
+    --line-strong: #d8c9d1;
+    --text: #45333d;
+    --muted: #8d7b85;
+    --green-bg: #e4f2ea;
+    --green-text: #1f6b44;
+    --yellow-bg: #faf1dd;
+    --yellow-text: #8a651c;
+    --red-bg: #fae7ec;
+    --red-text: #b02e4c;
+    --blue-bg: #e7f0f7;
+    --blue-text: #2d6a94;
+    --legal-bg: #ece5f3;
+    --legal-text: #5f3f85;
+    background: var(--page);
+    color: var(--text);
+    font-family: "Almarai", "Segoe UI", system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .bbk-policy * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  .bbk-policy .wrap {
+    width: min(880px, calc(100% - 36px));
+    margin: 0 auto;
+    padding: 40px 0 56px;
+  }
+
+  .bbk-policy .doc-header {
+    border-top: 4px solid var(--plum);
+    padding: 26px 0 22px;
+    margin-bottom: 8px;
+  }
+
+  .bbk-policy .doc-kicker {
+    color: var(--rose);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .bbk-policy .doc-title {
+    font-family: "Libre Baskerville", Georgia, serif;
+    color: var(--plum);
+    font-size: 30px;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+
+  .bbk-policy .doc-sub {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 14px;
+    max-width: 60ch;
+  }
+
+  .bbk-policy .section-label {
+    font-family: "Libre Baskerville", Georgia, serif;
+    margin: 40px 2px 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+    color: var(--plum);
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+
+  .bbk-policy .section-label .sec-letter {
+    color: var(--rose);
+    font-style: italic;
+    margin-right: 8px;
+  }
+
+  .bbk-policy .policy-row {
+    margin-bottom: 14px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--rose);
+    border-radius: 12px;
+    padding: 20px 22px;
+  }
+
+  .bbk-policy .policy-row:hover { border-color: var(--line-strong); border-left-color: var(--plum); }
+
+  .bbk-policy .row-tag {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    min-height: 24px;
+    margin: 0 5px 10px 0;
+    padding: 3px 11px;
+    border-radius: 999px;
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 800;
+    white-space: normal;
+  }
+
+  .bbk-policy .t-green { background: var(--green-bg); color: var(--green-text); }
+  .bbk-policy .t-yellow { background: var(--yellow-bg); color: var(--yellow-text); }
+  .bbk-policy .t-red { background: var(--red-bg); color: var(--red-text); }
+  .bbk-policy .t-blue { background: var(--blue-bg); color: var(--blue-text); }
+  .bbk-policy .t-legal { background: var(--legal-bg); color: var(--legal-text); }
+
+  .bbk-policy .row-title {
+    font-family: "Libre Baskerville", Georgia, serif;
+    margin: 0 0 10px;
+    color: var(--plum);
+    font-size: 17px;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+
+  .bbk-policy .row-desc { color: var(--text); font-size: 14.5px; line-height: 1.75; }
+  .bbk-policy .row-desc strong { color: var(--plum); font-weight: 800; }
+
+  .bbk-policy .row-sub {
+    margin-top: 9px;
+    color: var(--muted);
+    font-size: 12.5px;
+    line-height: 1.6;
+  }
+
+  .bbk-policy .formula {
+    margin-top: 14px;
+    padding: 14px 16px;
+    color: var(--text);
+    background: #faf6f8;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    font-size: 13.5px;
+    line-height: 1.85;
+  }
+
+  .bbk-policy .formula strong { color: var(--plum); font-weight: 800; }
+
+  .bbk-policy .chip {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 6px;
+    padding: 2px 9px;
+    color: var(--rose);
+    background: var(--rose-soft);
+    border-radius: 999px;
+    font-size: 10.5px;
+    font-weight: 800;
+    vertical-align: 1px;
+  }
+
+  .bbk-policy .checkbox-box {
+    margin: 18px 0 8px;
+    padding: 20px 22px;
+    background: var(--rose-soft);
+    border: 1px solid #e6cfdc;
+    border-radius: 12px;
+  }
+
+  .bbk-policy .cb-label {
+    margin-bottom: 12px;
+    color: var(--plum-soft);
+    font-size: 11.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .bbk-policy .cb-row { display: flex; align-items: flex-start; gap: 10px; }
+  .bbk-policy .cb-row + .cb-row { margin-top: 10px; }
+  .bbk-policy .cb-icon { flex-shrink: 0; margin-top: 2px; color: var(--rose); font-size: 14px; }
+  .bbk-policy .cb-text { color: var(--plum-soft); font-size: 13.5px; line-height: 1.7; }
+
+  .bbk-policy .divider { height: 1px; margin: 38px 0 16px; background: var(--line); }
+
+  .bbk-policy .footer {
+    color: var(--muted);
+    text-align: center;
+    font-size: 12.5px;
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-style: italic;
+  }
+
+  @media (max-width: 640px) {
+    .bbk-policy .wrap { width: min(100% - 24px, 880px); padding-top: 22px; }
+    .bbk-policy .doc-title { font-size: 24px; }
+    .bbk-policy .policy-row, .bbk-policy .checkbox-box { padding: 16px; }
+  }
+
+  @media print {
+    .bbk-policy, .bbk-policy .policy-row, .bbk-policy .checkbox-box, .bbk-policy .formula {
+      background: #ffffff !important;
+    }
+    .bbk-policy .wrap { width: 100%; padding: 0; }
+  }
+</style>
+<section class="sec theme-white"><div class="bbk-policy">
+
+<div class="wrap">
+
+  <div class="doc-header">
+    <div class="doc-kicker">Blabla Korea · Cours de coréen</div>
+    <h1 class="doc-title">Politique d'annulation &amp; de remboursement</h1>
+    <p class="doc-sub">Cette politique s'applique à l'ensemble des cours de coréen Blabla Korea : cours particuliers, cours collectifs et ateliers thématiques.</p>
+  </div>
+
+  <!-- ─── A ─── -->
+  <div class="section-label"><span class="sec-letter">A.</span>Report de cours &amp; absences</div>
+
+  <div class="policy-row">
+    <span class="row-tag t-green">Avant 24h</span>
+    <p class="row-title">Demande de report avant 24h</p>
+    <p class="row-desc">Crédit de séance reporté automatiquement. Utilisable pendant la durée de validité du pack (6 mois à partir de l'achat).</p>
+    <p class="row-sub">Ex : cours prévu mercredi à 16h → demande d'annulation/report possible jusqu'au mardi à 16h</p>
+  </div>
+
+  <div class="policy-row">
+    <span class="row-tag t-yellow">Moins de 24h / No-show</span>
+    <p class="row-title">Annulation moins de 24h avant ou absence</p>
+    <p class="row-desc">Crédit automatiquement perdu. Aucun remboursement.</p>
+    <p class="row-sub">Ex : cours mercredi à 16h → message d'annulation mercredi à 9h → séance perdue</p>
+  </div>
+
+  <div class="policy-row">
+    <span class="row-tag t-yellow">Cours collectif</span>
+    <p class="row-title">Absence à un cours collectif</p>
+    <p class="row-desc">Les cours collectifs suivent un calendrier fixe. En cas d'absence de l'apprenant pour motif personnel, la séance manquée ne peut pas être rattrapée individuellement, remboursée ni reportée en crédit.</p>
+    <p class="row-sub">Sauf exception commerciale accordée par Blabla Korea</p>
+  </div>
+
+  <div class="policy-row">
+    <span class="row-tag t-blue">🎫 Joker No-show</span>
+    <p class="row-title">Cours particulier 5 &amp; 10 séances · Cours collectif PACK 8</p>
+    <p class="row-desc">
+      1 joker no-show par pack. Renouvelé à chaque nouvel achat.<span class="chip">Non cumulable</span><br>
+      Utilisable uniquement pendant la durée du pack en cours. Non reportable.<br><br>
+      <strong>Sans joker :</strong> Atelier Alphabet coréen, Cours collectif PACK 4, Cours particulier à l'unité
+    </p>
+  </div>
+
+  <!-- ─── B ─── -->
+  <div class="section-label"><span class="sec-letter">B.</span>Remboursement partiel de pack</div>
+
+  <div class="policy-row">
+    <span class="row-tag t-red">Remb. partiel</span>
+    <p class="row-title">Demande de remboursement après le début des cours</p>
+    <p class="row-desc">Les séances déjà suivies ne sont pas remboursées. Seules les séances restantes sont remboursées sur la base du tarif réellement payé, après déduction de 15% de frais administratifs.</p>
+    <div class="formula">
+      <strong>Formule :</strong> Séances restantes × (total payé ÷ nb de séances) × 0,85<br>
+      <strong>Base :</strong> calculé sur le tarif réellement payé<br><br>
+      Ex — Cours collectif PACK 4 à 59€, 2 séances suivies :<br>
+      Tarif/séance : 59€ ÷ 4 = 14,75€<br>
+      → 2 restantes × 14,75€ × 0,85 = <strong>25,08€ remboursés</strong>
+    </div>
+  </div>
+
+  <!-- ─── C ─── -->
+  <div class="section-label"><span class="sec-letter">C.</span>Annulation après paiement</div>
+
+  <div class="policy-row">
+    <span class="row-tag t-legal">Avant début — dans les 14 jours</span>
+    <p class="row-title">Aucun test, appel, placement ou travail personnalisé commencé</p>
+    <p class="row-desc">Remboursement intégral. Sans frais.</p>
+  </div>
+
+  <div class="policy-row">
+    <span class="row-tag t-yellow">Après début · avant cours</span>
+    <p class="row-title">Test, appel, placement ou préparation effectués / aucune séance suivie</p>
+    <p class="row-desc">Si aucun cours n'a encore été suivi, seuls 20€ de frais d'initialisation sont retenus.<br>Ces frais couvrent le test de niveau, l'appel découverte, le placement de groupe et la préparation pédagogique personnalisée.</p>
+    <div class="formula">
+      <strong>Formule :</strong> montant réellement payé − 20€<br><br>
+      Ex — Cours collectif PACK 4 à 59€, annulation avant le 1er cours :<br>
+      59€ − 20€ = <strong>39€ remboursés</strong>
+    </div>
+    <p class="row-sub">Atelier Alphabet coréen : ne nécessitant ni test de niveau ni placement, les frais d'initialisation ne s'appliquent pas — remboursement intégral avant la séance.</p>
+  </div>
+
+  <div class="policy-row">
+    <span class="row-tag t-red">Après 1er cours</span>
+    <p class="row-title">Annulation après au moins 1 séance suivie</p>
+    <p class="row-desc">Les séances déjà suivies ne sont pas remboursées. Les séances restantes sont remboursées selon la formule de remboursement partiel de la section B, avec déduction de 15% de frais administratifs.</p>
+    <div class="formula">
+      <strong>Formule :</strong> séances restantes × (total payé ÷ nb de séances) × 0,85<br><br>
+      Ex — Cours collectif PACK 4 à 59€, 1 séance suivie :<br>
+      3 restantes × 14,75€ × 0,85 = <strong>37,61€ remboursés</strong>
+    </div>
+  </div>
+
+  <!-- ─── D ─── -->
+  <div class="section-label"><span class="sec-letter">D.</span>Annulation côté formateur</div>
+
+  <div class="policy-row">
+    <span class="row-tag t-blue">Motif formateur</span>
+    <p class="row-title">Cours annulé par le formateur</p>
+    <p class="row-desc">Une nouvelle date est proposée à l'apprenant dans les 24h. Si aucune date de remplacement raisonnable ne peut être trouvée, l'apprenant peut choisir entre le report du crédit ou le remboursement de la séance concernée.</p>
+  </div>
+
+  <div class="policy-row">
+    <span class="row-tag t-red">Arrêt définitif</span>
+    <p class="row-title">Arrêt définitif du service</p>
+    <p class="row-desc">Remboursement intégral des crédits restants, sans frais.</p>
+  </div>
+
+  <!-- ─── E ─── -->
+  <div class="section-label"><span class="sec-letter">E.</span>Ouverture des cours collectifs</div>
+
+  <div class="policy-row">
+    <span class="row-tag t-blue">Effectif min.</span>
+    <p class="row-title">Effectif insuffisant pour un cours collectif</p>
+    <p class="row-desc">En cas d'effectif insuffisant ou de contrainte d'organisation, Blabla Korea peut reporter ou annuler l'ouverture d'un cours collectif. L'apprenant pourra choisir entre un remboursement intégral ou un transfert vers un autre groupe disponible.</p>
+  </div>
+
+  <!-- ─── F ─── -->
+  <div class="section-label"><span class="sec-letter">F.</span>Validité du pack</div>
+
+  <div class="policy-row">
+    <span class="row-tag t-yellow">Expiration du pack</span>
+    <p class="row-title">Validité 6 mois à partir de l'achat</p>
+    <p class="row-desc">Email de rappel envoyé 4 semaines avant expiration. Crédits non utilisés expirent automatiquement.</p>
+    <p class="row-sub">Validité jusqu'à 23h59 le jour correspondant à 6 mois après l'achat (heure Europe/Paris)</p>
+  </div>
+
+  <!-- ─── G ─── -->
+  <div class="section-label"><span class="sec-letter">G.</span>Inadéquation de niveau</div>
+
+  <div class="policy-row">
+    <span class="row-tag t-blue">Ajustement niveau</span>
+    <p class="row-title">Niveau inadapté après la 1ère séance</p>
+    <p class="row-desc">Une demande de changement de groupe peut être examinée dans les 48h suivant la 1ère séance, sous réserve de places disponibles. Aucun supplément n'est dû si le tarif du nouveau groupe est identique.</p>
+    <p class="row-sub">Le changement de groupe n'est confirmé qu'après validation par Blabla Korea</p>
+  </div>
+
+  <!-- ─── H ─── -->
+  <div class="section-label"><span class="sec-letter">H.</span>Problèmes techniques</div>
+
+  <div class="policy-row">
+    <span class="row-tag t-blue">Côté formateur</span>
+    <p class="row-title">Connexion ou équipement du formateur défaillant</p>
+    <p class="row-desc">Crédit reporté. Nouvelle date proposée dans les 48h.</p>
+  </div>
+
+  <div class="policy-row">
+    <span class="row-tag t-yellow">Côté apprenant</span>
+    <p class="row-title">Connexion ou équipement de l'apprenant défaillant</p>
+    <p class="row-desc">1ère fois : exception accordée, crédit reporté.<br>À partir de la 2ème fois : crédit perdu.</p>
+  </div>
+
+  <div class="divider"></div>
+  <div class="footer">Blabla Korea — Politique d'annulation &amp; de remboursement · 2026</div>
+
+</div>
+
+</div></section>

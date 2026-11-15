@@ -1,0 +1,19 @@
+---
+layout: default
+lang: fr
+key: blog
+title: "Notre blog | Voyage, culture et affaires en Corée — Blabla Korea"
+description: "Conseils pratiques, étiquette coréenne, guides de voyage et clés pour réussir un partenariat avec la Corée. Le blog de Blabla Korea, écrit par Jeanne et Jonghyuk."
+permalink: /notre-blog/
+---
+<div class="blog-head"><h1>{{ site.data.site.fr.blog_title }}</h1></div>
+<div class="blog-grid">
+{%- assign articles = site.articles_fr | sort: "date" | reverse -%}
+{%- for a in articles %}
+  <a class="blog-card" href="{{ a.url | relative_url }}">
+    {% if a.image %}<img src="{{ a.image | relative_url }}" alt="" loading="lazy">{% endif %}
+    <time datetime="{{ a.date | date_to_xmlschema }}">{{ a.date | date: "%d/%m/%Y" }}</time>
+    <h2>{{ a.title | escape }}</h2>
+  </a>
+{%- endfor %}
+</div>

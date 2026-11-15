@@ -1,0 +1,7 @@
+<footer class="site-footer">
+  <div>
+    <a class="brand" href="{% if lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">Blabla Korea</a>
+    <nav aria-label="Footer">{% for item in t.footer %}<a href="{{ item.url | relative_url }}">{{ item.label | escape }}</a>{% endfor %}</nav>
+  </div>
+  <a class="social" href="{{ site.data.site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+</footer>
